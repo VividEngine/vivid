@@ -1,12 +1,7 @@
-#include <stdio.h>
 #include <SDL3/SDL.h>
 #include <SDL3_image/SDL_image.h>
 
 int main(void) {
-  SDL_version sdlver;
-  SDL_VERSION(&sdlver);
-  printf("Compiled against SDL version %d.%d.%d\n", sdlver.major, sdlver.minor, sdlver.patch);
-  printf("Hello from the VividEngine team!");
   SDL_Init(SDL_INIT_VIDEO);
   SDL_Window *window = SDL_CreateWindow(
     "VividEngine",
