@@ -20,10 +20,10 @@ int main(void) {
   SDL_Surface* icon = IMG_Load("icon_tr.png");
   SDL_SetWindowIcon(window, icon);
   SDL_DestroySurface(icon);
-  SDL_Color white = {255, 255, 255, 255};
-  SDL_Surface *text_surface = TTF_RenderText_Blended(font_regular, "Vivid Engine", strlen("Vivid Engine"), white);
-  SDL_Texture *text_texture = SDL_CreateTextureFromSurface(renderer, text);
-  SDL_DestroySurface(text);
+  SDL_Color color_white = {255, 255, 255, 255};
+  SDL_Surface *txt_surface = TTF_RenderText_Blended(font_regular, "Vivid Engine", strlen("Vivid Engine"), color_white);
+  SDL_Texture *txt_texture = SDL_CreateTextureFromSurface(renderer, txt_surface);
+  SDL_DestroySurface(txt_surface);
   SDL_Event event;
   while(running) {
     while(SDL_PollEvent(&event)) {
@@ -39,12 +39,12 @@ int main(void) {
     }
     SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
     SDL_RenderClear(renderer);
-    SDL_FRect dst = {window_x / 2, window_y / 2, 0.0f, 0.0f};
-    SDL_GetTextureSize(texture, &dst.w, &dst.h);
-    SDL_RenderTexture(renderer, texture, NULL, &dst);
+    SDL_FRect txt_rect = {window_x / 2, window_y / 2, 0.0f, 0.0f};
+    SDL_GetTextureSize(txt_texture, &txt_rect.w, &txt_rect.h);
+    SDL_RenderTexture(renderer, txt_texture, NULL, &txt_rect);
     SDL_RenderPresent(renderer);
   }
-  SDL_DestroyTexture(texture);
+  SDL_DestroyTexture(txt_texture);
   TTF_CloseFont(font_regular);
   TTF_Quit();
   SDL_DestroyRenderer(renderer);
