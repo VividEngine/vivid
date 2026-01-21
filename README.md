@@ -1,4 +1,4 @@
 # Vivid Engine
 Vivid Engine is a simple 3D engine made in C.
 
-It should not be used for anything serious, and is mostly made as a hobby.
+**NOTE:** Vivid Engine is currently only tested on Windows 11. We cannot guarantee it will work on any other systems, although we try to keep code universal so it's likely it will.
