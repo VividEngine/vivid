@@ -4,3 +4,4 @@ vivid.exe: src/main.c
 	cp "./src\SDL3_image\x86_64-w64-mingw32\bin\SDL3_image.dll" ./bin
 	cp "./src/SDL3_ttf/x86_64-w64-mingw32/bin/SDL3_ttf.dll" ./bin
 	cp ./src/icon_tr.png ./bin
+	cp ./src/*.ttf ./bin

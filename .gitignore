@@ -1,6 +1,1 @@
-*.o
-*.exe
-*.out
-*.obj
-*.log
-/bin
+bin/
