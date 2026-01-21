@@ -16,6 +16,7 @@ int main(void) {
   );
   SDL_Renderer *renderer = SDL_CreateRenderer(window, NULL);
   TTF_Font *font_regular = TTF_OpenFont("OpenSauceOne-Regular.ttf", 24);
+  TTF_Font *font_bold = TTF_OpenFont("OpenSauceOne-Bold.ttf", 24);
   int running = 1;
   SDL_Surface* icon = IMG_Load("icon_tr.png");
   SDL_SetWindowIcon(window, icon);
