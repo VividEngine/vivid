@@ -1,5 +1,3 @@
-// function inits
-
 #ifndef VIVID_INCLUDE
 
 #define VIVID_INCLUDE
@@ -21,9 +19,9 @@ extern "C" {
 
 void VE_Init(void);
 TTF_Font* VE_Font(const char* font_name, int font_size);
-SDL_Window* VE_Window(const char* window_title, int window_x, int window_y, bool window_resizable);
-void VE_SetIcon(const char* icon, SDL_Window* window);
+int VE_SetIcon(const char* icon);
 void VE_Quit(void);
+void VE_PollEvent(void);
 
 #ifdef __cplusplus
 }
