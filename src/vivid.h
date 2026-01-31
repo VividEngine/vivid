@@ -17,9 +17,16 @@
 extern "C" {
 #endif
 
+extern int VE_WINDOW_X;
+extern int VE_WINDOW_Y;
+extern SDL_Window* VE_WINDOW;
+extern bool VE_RUNNING;
+extern SDL_Event VE_EVENT;
+
+void VE_Exception(const char* message);
 void VE_Init(void);
 TTF_Font* VE_Font(const char* font_name, int font_size);
-int VE_SetIcon(const char* icon);
+void VE_SetIcon(const char* icon);
 void VE_Quit(void);
 void VE_PollEvent(void);
 

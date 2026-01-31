@@ -2,7 +2,8 @@
 <img src="https://raw.githubusercontent.com/GamerZero9512/repostuff/refs/heads/main/vivid_icon.png" alt="Vivid Engine icon">
 </p>
 
-![Build: failing](https://img.shields.io/badge/build-failing-red)
+![Build: passing](https://img.shields.io/badge/build-passing-green)
+![Last updated](https://img.shields.io/badge/last_updated-31/01/2026-blue)
 
 # Vivid Engine
 Vivid Engine is a simple 3D engine made in C.
