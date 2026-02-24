@@ -3,9 +3,9 @@
 </p>
 
 ![Build: passing](https://img.shields.io/badge/build-passing-green)
-![Last updated](https://img.shields.io/badge/last_updated-31/01/2026-blue)
+![Last updated](https://img.shields.io/badge/last_updated-24/02/2026-blue)
 
 # Vivid Engine
-Vivid Engine is a simple 3D engine made in C.
+Vivid Engine is a simple 3D game engine made in C.
 
-**NOTE:** Vivid Engine is currently only tested on Windows 11. If you are not using Windows, swap out the DLL files used by SDL to add compatibility for your system.
+**NOTE:** Vivid Engine is currently only tested on Windows 11.
