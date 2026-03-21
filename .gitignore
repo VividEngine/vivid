@@ -1,2 +1,4 @@
 .git/
 test/
+src/vivid.o
+src/libvivid.a
