@@ -3,7 +3,7 @@
 </p>
 
 ![Build: passing](https://img.shields.io/badge/build-passing-green)
-![Last updated](https://img.shields.io/badge/last_updated-15/03/2026-blue)
+![Last updated](https://img.shields.io/badge/last_updated-21/03/2026-blue)
 
 # Vivid Engine
 Vivid Engine is a simple 3D game engine made in C.
@@ -22,6 +22,16 @@ Only some functionality has been currently built.
 - Text rendering via SDL_ttf
 
 *This list will be updated with every update to VividEngine.*
+
+------
+
+Compiling:
+
+```
+git clone https://github.com/VividEngine/vivid.git
+cd vivid/src
+make
+```
 
 ------
 
